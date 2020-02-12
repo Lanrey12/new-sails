@@ -1,0 +1,32 @@
+<div class="panel panel-success">
+<h1 class="display-3">Hobby Records</h1>
+<table class="table" "table-striped">
+ <thead>
+        <tr> 
+        <th> Id </th>
+        <th> Hobby </th>
+        <th> Firstname </th>
+        <th> Lastname </th>
+        <th> Age </th>
+        </tr>
+    </thead>
+    <tbody>
+              <% hobbydb.forEach(function(hobbydb){ %>
+            <tr>
+                    <td><%= hobbydb.id %></td>
+                    <td><%= hobbydb.title %></td>
+                    <td><%= hobbydb.firstname %></td>
+                    <td><%= hobbydb.lastname %></td>
+                    <td><%= hobbydb.age %></td>
+                    <td>
+                        
+                        <a href="/hobbydb/edit/<%= hobbydb.id %>" class="btn btn-info">Edit records</a>
+                        <form class="d-inline" action="/hobbydb/delete/<%= hobbydb.id %>" method="POST">
+                        <input type="submit" value="Delete" class="btn btn-danger">
+                        </form>
+                 </td>
+            </tr>
+           <% }) %>  
+    </tbody>
+</table>
+</div>
