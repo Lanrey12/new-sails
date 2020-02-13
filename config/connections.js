@@ -76,7 +76,7 @@ module.exports.connections = {
   ***************************************************************************/
   heroku_postgres: {
     adapter: 'sails-postgresql',
-    url: 'process.env.postgres://yqapnaphaqvdyd:d5abd7434255c36c5c67b42297bdb512497462d9177b74f4901ffc305d152aa5@ec2-35-172-85-250.compute-1.amazonaws.com:5432/d3ja70g34p4cbu',
+    url: 'process.env.DATABASE_URL',
     ssl: false
   }
 
