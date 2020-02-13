@@ -17,7 +17,7 @@ module.exports.models = {
   * connections (see `config/connections.js`)                                *
   *                                                                          *
   ***************************************************************************/
-  //  connection: 'heroku_postgres',
+  connection: 'heroku_postgres',
 
   /***************************************************************************
   *                                                                          *
