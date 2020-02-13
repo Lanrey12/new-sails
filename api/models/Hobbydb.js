@@ -26,6 +26,6 @@ module.exports = {
     },
 
   },
-  connection: 'heroku_postgres'
+  connection: 'mongodb'
 };
 
